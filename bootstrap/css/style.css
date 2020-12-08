@@ -1,0 +1,56 @@
+.dropdown-item:hover {
+    background-color: rgb(25, 26, 26);
+    color: white !important;
+    box-shadow: 0, 0, 5px, black;
+}
+
+.bg-teal,
+.btn-teal {
+    background: rgb(7, 71, 71) !important;
+}
+
+.text-teal {
+    color: rgb(7, 43, 43) !important;
+}
+
+.bg-gray {
+    background: linear-gradient(45deg, rgb(133, 74, 120), rgb(73, 70, 70));
+}
+
+.bg-lime,
+.btn-lime {
+    background: linear-gradient(45deg, rgb(34, 2, 27), rgb(73, 70, 70));
+}
+
+.bg-indigo,
+.btn-indigo {
+    background: linear-gradient(45deg, rgb(15, 46, 46), purple);
+}
+
+.bg-success,
+.btn-success {
+    background: linear-gradient(45deg, rgb(61, 56, 56), rgb(139, 12, 243));
+}
+
+.bg-card {
+    background: linear-gradient(teal, lightgray, teal);
+}
+
+.bg-task {
+    background: radial-gradient(rgb(18, 238, 47), purple);
+}
+
+.bg-categories,
+.btn-categories {
+    background: linear-gradient(rgb(38, 41, 59), rgb(128, 128, 19), rgb(128, 66, 66));
+}
+
+.bg-employees,
+.btn-employees {
+    background: linear-gradient(rgb(72, 75, 100), rgb(184, 80, 19), rgb(88, 5, 109));
+}
+
+.bg-emp {
+    background: linear-gradient(violet, indigo, blue, green, yellow, orange, red);
+    opacity: 0.9;
+}

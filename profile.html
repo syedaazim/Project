@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application</title>
+
+    <!-- MDB icon -->
+    <link rel="icon" href="fav.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Main nav bar starts here  -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand text-warning">
+                <i class="fa fa-angle-left">AT</i><i class=" fa fa-angle-right"> MyTravel app</i>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#ui-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="ui-navbar">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fa fa-chart-bar text-muted">Dashboard</i>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="tasks.html" class="nav-link">
+                            <i class="fa fa-list text-muted"> Tasks</i>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="categories.html" class="nav-link">
+                            <i class="fa fa-sitemap text-muted" aria-hidden="true">Categories</i>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="employees" class="nav-link">
+                            <i class="fa fa-users text-muted">Employees</i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown">
+                            <i class="fa fa-sign-in-alt text-muted" aria-hidden="true"></i> Aazim
+                        </a>
+                        <div class=" dropdown-menu p-2">
+                            <a href="profile.html" class=" dropdown-item">
+                                <i class="fa fa-user-circle" aria-hidden="true"></i> Profile
+                            </a>
+                            <a href="settings.html" class=" dropdown-item">
+                                <i class="fa fa-cogs" aria-hidden="true"></i>Settings
+                            </a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="login.html" class="nav-link">
+                            <i class="fa fa-sign-out-alt text-muted" aria-hidden="true">Sign out</i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- dashboard section  -->
+    <section class="p-2 bg-teal text-white">
+        <div class="container">
+            <div class="row">
+                <h1>
+                    <i class="fa fa-user"></i> User
+                </h1>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- button section  -->
+    <section class="p-2 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <button class=" btn btn-lime btn-block" data-toggle="modal" data-target="#task-modal">
+                        <i class="fa fa-tasks" aria-hidden="true"> Dashboard</i>
+                    </button>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <button class=" btn btn-success btn-block" data-toggle="modal" data-target="#password-modal">
+                        <i class="fa fa-lock" aria-hidden="true"> Update Password</i>
+                    </button>
+                </div>
+                <div class="col-md-3">
+                    <button class=" btn btn-indigo btn-block" data-toggle="modal" data-target="#employee-modal">
+                        <i class="fa fa-trash" aria-hidden="true"> Delete Account</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- add employee modal  -->
+
+    <div class="modal" id="password-modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content animated flipInY">
+                <div class="modal-header text-white bg-indigo">
+                    <h3>update Password</h3>
+                    <button class="close" data-dismiss="modal">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="modal-body bg-light">
+                    <form action="">
+                        <div class="form-group">
+                            <label class="form-check-label">Old Password</label>
+                            <input type="text" class="form-control" placeholder="Enter Old Password">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-check-label"> New Password</label>
+                            <input type="password" class="form-control" placeholder="Enter New Password">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-check-label">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="Confirm New Password">
+                        </div>
+                        <input type="submit" class=" btn btn-indigo" value="Update Password">
+                        <a href="#" data-dismiss="modal" class=" btn btn-dark">Close</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main profile section -->
+    <section class="p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card text-black-50 text-center">
+                        <div class="card-header">
+                            <h3>About Me</h3>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card">
+                                <h3>Aazim</h3>
+                            </div>
+                            <div class="card mt-2">
+                                <p class="lead">Insiders: Want to try new features as soon as possible? You can download the nightly Insiders build and try the latest updates as soon as they are available. And for the latest Visual Studio Code news, updates, and content,
+                                    follow us on Twitter @code!
+
+                                </p>
+                            </div>
+                            <div class="card mt-2">
+                                <p class="lead">Insiders: Want to try new features as soon as possible? You can download the nightly Insiders build and try the latest updates as soon as they are available. And for the latest Visual Studio Code news, updates, and content,
+                                    follow us on TwitterWant to try new features as soon as possible? You can download the nightly Insiders build and try the latest updates as soon as they are available. And for the latest Visual Studio Code news, updates,
+                                    and content, follow us on Twitter @code!
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <h4>Thank you so much</h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Aazim</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="images/imgs5.jpg" class="img-fluid img-thumbnail" alt="">
+                            <div class="row">
+                                <div class="col">
+                                    <button class=" btn btn-info btn-block mt-2">
+                                       <i class="fa fa-pen    "></i> Edit
+                                </button>
+                                    <button class=" btn btn-success btn-block mt-2">
+                                       <i class="fa fa-trash" aria-hidden="true"></i> Delete
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Main footer starts here  -->
+
+    <footer class="p-3 bg-dark text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3> Copyright &copy; 2020, KashTravels.com</h3>
+                    <h6>All rights reserved</h6>
+                    <h6>Developed and maintained by <span class="text-success">
+                        <a href="#"> <i class="fa fa-user-circle" aria-hidden="true"></i> Aazim</span></a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap script files -->
+
+
+    <script type="text/javascript " src="bootstrap/js/jquery.min.js "></script>
+
+    <script type="text/javascript " src="bootstrap/js/popper.min.js "></script>
+
+    <script type="text/javascript " src="bootstrap/js/bootstrap.min.js "></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript " src="bootstrap/js/mdb.min.js "></script>
+
+    <!-- Your custom scripts (optional) -->
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('editor1');
+    </script>
+
+</body>
+
+</html>
